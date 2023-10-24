@@ -15,7 +15,7 @@ export default function SingleBook({img, title}) {
          <Card>
              <Card.Img  
                 className={selected ? "select" : ""} 
-                style={{height: 450}} variant="top" 
+                style={{height: 450, cursor: "pointer"}} variant="top" 
                 src={img} 
                 onClick={() => setSelected(!selected) }  
             />
