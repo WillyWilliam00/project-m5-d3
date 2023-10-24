@@ -5,12 +5,9 @@ import SingleBook from "./SingleBook";
 
 export default function TableBook() {
 
-const [name, setName] = useState("");
 
-function TextFilter(e) {
-        setName(e.target.value)
-        fantasy.filter(book => book.title.toLowerCase().includes(name.toLowerCase()))
-       }
+
+
 
     return (
         
@@ -20,13 +17,13 @@ function TextFilter(e) {
             <Row>
                 <Col xs={12}>
                     <label>
-                       <input name="TitleName" placeholder="Signore degli Anelli.." value={name} onChange={TextFilter(e)}/>
+                       <input name="TitleName" placeholder="Signore degli Anelli.."/>
                     </label>
                 </Col>
             </Row>
             <Row className="row-gap-5">
                 {fantasy.map((book) => (
-                    <SingleBook img={book.img} title={book-title}/>
+                    <SingleBook img={book.img} title={book.title}/>
 
                 ))}
 
