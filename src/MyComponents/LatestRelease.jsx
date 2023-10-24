@@ -6,27 +6,24 @@ import SingleBook from "./SingleBook";
 
 export default function TableBook() {
     const [name, setName] = useState("");
-
+    const usingQuery = book => book.title.toLowerCase().includes(name.toLowerCase())
 
 
 
     return (
         
-
-        
         <Container className="my-5">
             <Row>
-                <Col xs={12}>
-                    <label>
-                       <input name="TitleName" placeholder="Signore degli Anelli.." value={name} 
+                <Col xs={12} className="d-flex justify-content-center">
+                    <label className="my-5" style={{width: "60%"}}>
+                       <input className="input-text" name="TitleName" placeholder="Signore degli Anelli.." value={name} 
                        onChange={(e) => {setName(e.target.value)}}/>
                     </label>
                 </Col>
             </Row>
             <Row className="row-gap-5">
-                {fantasy.map((book) => (
-                    <SingleBook img={book.img} title={book.title}/>
-
+                {fantasy.filter(usingQuery).map((book) => (
+                    <SingleBook img={book.img} title={book.title}/> 
                 ))}
 
             </Row>

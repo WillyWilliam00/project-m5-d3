@@ -5,9 +5,9 @@ function Jumbotron() {
     return (
         <Container>
             
-                <div class="jumbotron">
-                    <h1 class="display-4 fw-bolder">EPICBOOKS</h1>
-                    <p class="lead">Esplora mondi infiniti tra le pagine di un libro...</p>
+                <div className="jumbotron">
+                    <h1 className="display-4 fw-bolder">EPICBOOKS</h1>
+                    <p className="lead">Esplora mondi infiniti tra le pagine di un libro...</p>
                     
                     <Row className='d-flex justify-content-center'>
                         <Col xs={12 }sm={6}>

@@ -14,6 +14,16 @@
    
     object-fit: cover;
 }
+.input-text {
+    width: 500px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.select {
+    border: 5px solid red;
+}
 
 @media only screen and (max-width: 600px) {
     .footer-div {
