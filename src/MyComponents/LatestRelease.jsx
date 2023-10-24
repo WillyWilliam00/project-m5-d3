@@ -1,10 +1,11 @@
+import { useState } from "react";
 import {Row, Container, Col} from "react-bootstrap";
 import fantasy from "../books/fantasy.json"
 import SingleBook from "./SingleBook";
 
 
 export default function TableBook() {
-
+    const [name, setName] = useState("");
 
 
 
@@ -17,7 +18,8 @@ export default function TableBook() {
             <Row>
                 <Col xs={12}>
                     <label>
-                       <input name="TitleName" placeholder="Signore degli Anelli.."/>
+                       <input name="TitleName" placeholder="Signore degli Anelli.." value={name} 
+                       onChange={(e) => {setName(e.target.value)}}/>
                     </label>
                 </Col>
             </Row>
