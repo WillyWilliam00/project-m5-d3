@@ -15,7 +15,7 @@ export default function TableBook() {
         <Container className="my-5">
             <Row>
                 <Col xs={12} className="d-flex justify-content-center">
-                    <label className="my-5" style={{width: "60%"}}>
+                    <label className="my-5" style={{width: "60%", textAlign: "center"}}>
                        <input className="input-text" name="TitleName" placeholder="Signore degli Anelli.." value={name} 
                        onChange={(e) => {setName(e.target.value)}}/>
                     </label>

@@ -1,5 +1,7 @@
 import {Row, Col, Container} from "react-bootstrap";
 
+
+
 function Footer() {
   return (
     <Container fluid className='bg-dark text-light mt-5'>
