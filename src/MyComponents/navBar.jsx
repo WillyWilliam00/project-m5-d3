@@ -3,7 +3,7 @@ import {Nav, Navbar} from "react-bootstrap";
 
 function MyNavBar() {
   return (
-    <Navbar expand="lg" className="ps-1" bg="dark" data-bs-theme="dark">
+    <Navbar fixed="top" expand="lg" className="ps-1" bg="dark" data-bs-theme="dark">
       
       <Navbar.Brand href="#home" className='d-flex justify-content-center align-items-center'>
             <img
