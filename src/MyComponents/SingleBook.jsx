@@ -12,12 +12,12 @@ export default function SingleBook({img, title}) {
     return (
         
      <Col xs={12} sm={6} lg={3}>
-         <Card>
+         <Card className={selected ? "select" : ""}  >
              <Card.Img  
-                className={selected ? "select" : ""} 
-                style={{height: 450, cursor: "pointer"}} variant="top" 
+                style={{cursor: "pointer"}} variant="top" 
                 src={img} 
                 onClick={() => setSelected(!selected) }  
+                className="img-fluid"
             />
             
              <Card.Body>

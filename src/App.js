@@ -1,7 +1,7 @@
 import MyNavBar from "./MyComponents/navBar"
-import Jumbotron from "./MyComponents/Welcome.jsx"
-import Footer from "./MyComponents/Footer.jsx"
-import TableBook from "./MyComponents/LatestRelease.jsx"
+import Jumbotron from "./MyComponents/Welcome"
+import Footer from "./MyComponents/Footer"
+import TableBook from "./MyComponents/LatestRelease"
 
 import './App.css';
 
